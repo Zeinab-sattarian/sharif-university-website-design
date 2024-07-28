@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+   
+
+</head>
+<body>
+
+    <section class="blog-header">
+        <nav>
+            <a href="index.html"><img  id="SharifLogo" src="{% static 'images/eee.png' %}"></a>
+            <div class="nav-links">
+                <ul>
+                <li><a href="{% url 'main:index' %}">HOME</a></li>
+                <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+                <li><a href="{% url 'main:course' %}">COURSE</a></li>
+                <li><a href="{% url 'main:blog' %}">BLOG</a></li>
+                <li><a href="{% url 'main:Contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Our Certificate and Online Programs</h1>
+
+
+    </section>
+   
+    <section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+        <img src="{% static 'images/certificate.jpg' %}">
+            <h2>Why it's good to receive Sharif University of technology's Certificate</h2>
+<p>Sharif University of technology is one of the most prestigious and reputable universities in Iran and the region. It offers high-quality education and research in various fields of science, engineering, and humanities. Sharif University of technology's Certificate is a valuable credential that demonstrates your knowledge and skills in a specific domain of study. In this blog post, I will explain why it's good to receive Sharif University of technology's Certificate and how it can benefit your career and personal development.</p>
+<p>First of all, Sharif University of technology's Certificate is a proof of your excellence and achievement. It shows that you have successfully completed a rigorous and challenging course of study at one of the top universities in the country. It also reflects your dedication and commitment to learning and improving yourself. By receiving Sharif University of technology's Certificate, you can stand out from the crowd and impress potential employers, clients, or collaborators.</p>
+<p>Secondly, Sharif University of technology's Certificate is a gateway to further opportunities and advancement. It can help you gain access to more advanced courses, programs, or degrees at Sharif University of technology or other reputable institutions. It can also open up new possibilities for networking, collaboration, or innovation with other professionals or experts in your field. By receiving Sharif University of technology's Certificate, you can expand your horizons and explore new frontiers of knowledge and practice.</p>
+<p>Thirdly, Sharif University of technology's Certificate is a source of pride and satisfaction. It represents your hard work, perseverance, and achievement. It also acknowledges your contribution to the development of science, technology, and society. By receiving Sharif University of technology's Certificate, you can feel proud of yourself and your accomplishments. You can also inspire others to pursue their goals and dreams.</p>
+<p>In conclusion, Sharif University of technology's Certificate is a valuable credential that can benefit you in many ways. It can prove your excellence and achievement, provide you with more opportunities and advancement, and give you pride and satisfaction. If you are interested in receiving Sharif University of technology's Certificate, you can visit their website and find out more about their courses, programs, and requirements. You can also contact their admission office or faculty members for more information and guidance.</p>
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment">
+                    </textarea>
+                    <button type="submit" class="hero-button red-button">POST COMMENT</button>
+
+                </form>
+
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Computer Engineering</span>
+                <span>21</span>
+
+            </div>
+            <div>
+                <span>Electrical Engineering</span>
+                <span>12</span>
+
+            </div>
+            <div>
+                <span>Civil Engineering</span>
+                <span>6</span>
+
+            </div>
+            <div>
+                <span>Machanical Engineering</span>
+                <span>17</span>
+
+            </div>
+            <div>
+                <span>Industrial Engineering</span>
+                <span>27</span>
+
+            </div>
+            <div>
+                <span>Architecture</span>
+                <span>18</span>
+
+            </div>
+            <div>
+                <span>physics</span>
+                <span>19</span>
+
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Sharif University of Technology (SUT) is the highest ranked technological university in the Islamic Republic of Iran.<br>SUT has expanded its services and today, it comprises 13 different departments in science and engineering.</p>
+    <section id="social-media">
+        <div class="container">
+          <div class="social-icons">
+            <a href="#"
+              ><img src="{% static './images/telegram.svg' %}" alt="Telegram"
+            /></a>
+            <a href="#"
+              ><img src="{% static './images/facebook.svg' %}" alt="Facebook"
+            /></a>
+            <a href="#"><img src="{% static './images/twitter.svg' %}" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="{% static './/images/instagram.svg' %}" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <p>Created By Zaynab Sattarian <span style="color: red;">♥</span></p>
+
+    </section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+</head>
+<body>
+
+    <section class="courses-header">
+        <nav>
+            <a href="index.html"><img  id="SharifLogo" src="{% static 'images/eee.png' %}"></a>
+            <div class="nav-links">
+                <ul>
+                <li><a href="{% url 'main:index' %}">HOME</a></li>
+                <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+                <li><a href="{% url 'main:course' %}">COURSE</a></li>
+                <li><a href="{% url 'main:blog' %}">BLOG</a></li>
+                <li><a href="{% url 'main:Contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Our Courses</h1>
+
+
+    </section>
+  
+    <section class="course">
+        <h1>Courses This University Offers</h1>
+        <p>If you're curious about What This university has to offer,ask no more, because you're at the right place.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Bachelors</h3>
+                <p>Sharif University of Technology offers courses in many different feilds in bachelors, and offers students with a highly academic environment</p>
+
+            </div>
+             <div class="course-col">
+                <h3>Masters</h3>
+                <p>Sharif University of Technology offers master students with Top Notch professors and mentors from all over the country. </p>
+
+            </div>
+             <div class="course-col">
+                <h3>Doctrate</h3>
+                <p>Sharif university of Technology offers doctrate students with many research oppurtonities and many insightful exchange programs with universities all over the globe.</p>
+
+            </div>
+        </div>
+
+
+    </section>
+ 
+    <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Here, at Sahrif University of Technology, we offer many facilities; ranging from sports to arts and science competitions!</p>
+            <div class="row">
+                <div class="facilities-col">
+                <img src="{% static 'images/pool.jpg' %}">
+                <h3>Public Pool</h3>
+                <p>Where students can practice water sports or enjoy a nice relaxing day with friends.</p>
+                    </div>
+                <div class="facilities-col">
+                <img src="{% static 'images/kkk.jpg' %}">
+                <h3>Public Library</h3>
+                <p>Where students can use a queit place to study with many valuable books and refrences at their fingertips.</p>
+
+
+                </div>
+                <div class="facilities-col">
+                <img src="{% static 'images/hall.jpg' %}">
+                <h3>Conference Hall</h3>
+                <p>Where many Celebrations and important annoucments are held.</p>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+    
+    <section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Sharif University of Technology (SUT) is the highest ranked technological university in the Islamic Republic of Iran.<br>SUT has expanded its services and today, it comprises 13 different departments in science and engineering.</p>
+    <section id="social-media">
+        <div class="container">
+          <div class="social-icons">
+            <a href="#"
+              ><img src="{% static './images/telegram.svg' %}" alt="Telegram"
+            /></a>
+            <a href="#"
+              ><img src="{% static './images/facebook.svg' %}" alt="Facebook"
+            /></a>
+            <a href="#"><img src="{% static './images/twitter.svg' %}" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="{% static './/images/instagram.svg' %}" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <p>Created By Zaynab Sattarian <span style="color: red;">♥</span></p>
+
+    </section>
+
+
+
+</body>
+</html>
+

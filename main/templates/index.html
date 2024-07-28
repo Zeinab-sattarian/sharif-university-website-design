@@ -1,0 +1,202 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Sharif University of Technology Website</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+
+
+
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <div class="nav-links">
+            <a href="index.html"><img  id="SharifLogo" src="{% static 'images/eee.png' %}"  onmouseover="ChangeImage()" onmouseout="ChangeImage()"></a>
+            <ul>
+                <li><a href="{% url 'main:index' %}">HOME</a></li>
+                <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+                <li><a href="{% url 'main:course' %}">COURSE</a></li>
+                <li><a href="{% url 'main:blog' %}">BLOG</a></li>
+                <li><a href="{% url 'main:Contact' %}">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="text-box">
+    <h1>Sharif University of Technology</h1>
+    <p>Sharif University of technology is Iran's Leading STEM University, with hundreds of Elite Students and Professors.
+    </p>
+    
+
+    <a href="{% url 'main:about' %}" class="hero-button">Visit Us To Know More!</a>
+
+
+</div>
+        
+        <img src="{% static 'images/shape-1.png' %}" class="shape shape-1"  >
+        <img src="{% static 'images/shape-2.png' %}" class="shape shape-2" >
+        <img src="{% static 'images/shape-3.png' %}" class="shape shape-3">
+        
+    </section>
+
+    <section class="course">
+        <h1>Courses This University Offers</h1>
+        <p>If you're curious about What This university has to offer,ask no more, because you're at the right place.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Bachelors</h3>
+                <p>Sharif University of Technology offers courses in many different feilds in bachelors, and offers students with a highly academic environment</p>
+
+            </div>
+             <div class="course-col">
+                <h3>Masters</h3>
+                <p>Sharif University of Technology offers master students with Top Notch professors and mentors from all over the country. </p>
+
+            </div>
+             <div class="course-col">
+                <h3>Doctrate</h3>
+                <p>Sharif university of Technology offers doctrate students with many research oppurtonities and many insightful exchange programs with universities all over the globe.</p>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="campus">
+        
+        <h1>Our University's Campus</h1>
+        <p>Here's a sneak peak into our campus</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="{% static 'images/camous.jpg' %}" class="slider-img img1">
+                
+                <div class="layer">
+                    <h3>KISH Island</h3>
+                </div>
+                
+
+
+            </div>
+        <div class="campus-col">
+                <img src="{% static 'images/tehran2.jpg' %}" class="slider-img img2">
+                <div class="layer">
+                    <h3>Main Campus</h3>
+                </div>
+
+
+            </div>
+
+
+        <div class="campus-col">
+                <img src="{% static 'images/tehran.jpg' %}" class="slider-img img3">
+                <div class="layer">
+                    <h3>Tehran</h3>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="btns-col">
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn"onclick="next()">Next</button>
+
+            </div>
+            <div class="btns-col">
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()" >Next</button>
+
+            </div>
+            <div class="btns-col">
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()">Next</button>
+
+            </div>
+        
+        
+        </div>
+    </section>
+
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Here, at Sharif University of Technology, we offer many facilities; ranging from sports to arts and science competitions!</p>
+            <div class="row">
+                {% for facility in facilities%}
+                <div class="facilities-col">
+                    <img src="{{ facility.img.url }}">
+                    <h3>{{ facility.title }}</h3>
+                    <p>{{ facility.desc }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h1>What Our Students Say About Us</h1>
+            <p>Here, you get to hear, in our students' very own words, how their experience in our University has been!</p>
+            <div class="row">
+
+            <div class="testimonials-col">
+                <img src="{% static 'images/pesar.jpg' %}">
+                <div>
+                <p>"Having obtained the chance to complete my education here, I got to meet many wonderful Professors, With the support of whom I managed to write a few journals that gained me multiple awards and world recognition.It's always been a life-long dream of mine to become a professor here and I always felt great honor whenever I got to mention I study in this University."</p><br>
+
+                <h3>Arash Fekri<br>(Doctrate Student in Artificial Intelligence)</h3>
+                </div>
+                </div>
+            <div class="testimonials-col">
+                <img src="{% static 'images/Pan.jpg' %}">
+                <div>
+                <p>"I was lucky enough to be granted a position in this university, and excatly from then on, although somtimes the sheer amount of assignments and exams were unbearing at times, my life has taken a turn for the better. I can feel myself growing more and more everyday, and I hope everyone will be given a chance to be their best version, just like how I was given this chance by this University."</p>
+                <h3>Pantea Bagheri<br>(bachelor student in Industrial engineering)</h3>
+                </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+    <section class="cta">
+        <h1>Enroll Today!</h1>
+        <a href="{% url 'main:Contact' %}" class="hero-button">CONTACT US</a>
+
+    </section>
+    <section class="footer">
+    
+    <h4>ABOUT US</h4>
+    <p>Sharif University of Technology (SUT) is the highest ranked technological university in the Islamic Republic of Iran.<br>SUT has expanded its services and today, it comprises 13 different departments in science and engineering.</p>
+        <img src="{% static 'images/SS.png' %}">
+    <section id="social-media">
+        <div class="container">
+          <div class="social-icons">
+            <a href="#"
+              ><img src="{% static './images/telegram.svg' %}" alt="Telegram"
+            /></a>
+            <a href="#"
+              ><img src="{% static './images/facebook.svg' %}" alt="Facebook"
+            /></a>
+            <a href="#"><img src="{% static './images/twitter.svg' %}" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="{% static './/images/instagram.svg' %}" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </section>
+    <p>Created By Zaynab Sattarian <span style="color: red;">♥</span></p>
+
+    </section>
+
+<script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+ 
+
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img  id="SharifLogo" src="{% static 'images/eee.png' %}"></a>
+            
+
+            <div class="nav-links">
+                <ul>
+                  <li><a href="{% url 'main:index' %}">HOME</a></li>
+                  <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+                  <li><a href="{% url 'main:course' %}">COURSE</a></li>
+                  <li><a href="{% url 'main:blog' %}">BLOG</a></li>
+                  <li><a href="{% url 'main:Contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>About Us</h1>
+
+
+    </section>
+    
+    <section class="about">
+        <div class="row">
+            <div class="about-col">
+            <h1>We Are Iran's Leading University In Science</h1>
+            <p>Sharif University of Technology (SUT) is the highest ranked technological university in the Islamic Republic of Iran.  SUT has expanded its services and today, it comprises 13 different departments in science and engineering. All departments offer B.S., M.S. and Ph.D. degree programs. SUT has established several research centers. These centers, while maintaining their own separate identities, co-exist within the university system. This arrangement gives individual researchers the opportunity and flexibility to conduct research while establishing a working relationship between the university and industry. There are also computer, languages and linguistics, Islamic studies, graphics, workshop and physical education centers on campus, as well as a large central library. SUT is a member of the International Association of Universities (IAU), the International Center for Theoretical Physics (ICTP), Asian University Presidents Forum (AUPF), Federation of the Universities of the Islamic World (FUIW), and the Third World Academy of Sciences (TWAS). Sharif University of Technology has earned a respected reputation and rank among institutes of higher learning in the Middle East. It strives to continue improving its standards.</p>
+            <a href="{% url 'main:course' %}" class="hero-button red-button">EXPLORE NOW</a>
+
+            </div>
+        <div class="about-col">
+            <img src="{% static 'images/logo-intro.jpg' %}">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Sharif University of Technology (SUT) is the highest ranked technological university in the Islamic Republic of Iran.<br>SUT has expanded its services and today, it comprises 13 different departments in science and engineering.</p>
+    <section id="social-media">
+        <div class="container">
+          <div class="social-icons">
+            <a href="#"
+              ><img src="{% static './images/telegram.svg' %}" alt="Telegram"
+            /></a>
+            <a href="#"
+              ><img src="{% static './images/facebook.svg' %}" alt="Facebook"
+            /></a>
+            <a href="#"><img src="{% static './images/twitter.svg' %}" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="{% static './/images/instagram.svg' %}" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <p>Created By Zaynab Sattarian <span style="color: red;">♥</span></p>
+
+    </section>
+
+
+
+</body>
+</html>
+

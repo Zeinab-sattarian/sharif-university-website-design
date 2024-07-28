@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    
+  </head>
+  <body>
+    <section class="contact-header">
+      <nav>
+        <a href="index.html"><img  id="SharifLogo" src="{% static 'images/eee.png' %}"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="{% url 'main:index' %}">HOME</a></li>
+            <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+            <li><a href="{% url 'main:course' %}">COURSE</a></li>
+            <li><a href="{% url 'main:blog' %}">BLOG</a></li>
+            <li><a href="{% url 'main:Contact' %}">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+   
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9174460114377!2d51.349123011061565!3d35.70364907246578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00a8bc1a7e63%3A0x61a5a909b878501!2sSharif%20University%20of%20Technology!5e0!3m2!1sen!2snl!4v1683127465319!5m2!1sen!2snl"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <span>
+              <h5>
+                <span>
+                  <a href="#"
+                    ><img src="{% static './images/home.svg' %}" alt="" style="width: 15px; margin-right: 2px;"/></a
+                ></span>
+                University's Main Campus Address
+              </h5>
+              <p>Tehran, Azadi Ave, P932+FM4, Iran</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h5><span>
+                <a href="#"
+                  ><img src="{% static './images/phone.svg' %}" alt="" style="width: 17px; margin-bottom: -2px;"/></a
+              ></span> University's Official Phone Number</h5>
+              <p>+982166013126<br />Open Everday, from 7A.M to 11 P.M</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h5><span>
+                <a href="#"
+                  ><img src="{% static './images/mail.svg' %}" alt="" style="width: 17px; margin-bottom: -2px;"/></a
+              ></span> Edu.sharif@outlook.com</h5>
+              <p>Email Us Your Query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your Subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button class="hero-button red-button" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Sharif University of Technology (SUT) is the highest ranked
+        technological university in the Islamic Republic of Iran.<br />SUT has
+        expanded its services and today, it comprises 13 different departments
+        in science and engineering.
+      </p>
+      <section id="social-media">
+        <div class="container">
+          <div class="social-icons">
+            <a href="#"
+              ><img src="{% static './images/telegram.svg' %}" alt="Telegram"
+            /></a>
+            <a href="#"
+              ><img src="{% static './images/facebook.svg' %}" alt="Facebook"
+            /></a>
+            <a href="#"><img src="{% static './images/twitter.svg' %}" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="{% static './/images/instagram.svg' %}" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <p>Created By Zaynab Sattarian <span style="color: red">♥</span></p>
+    </section>
+  </body>
+</html>
