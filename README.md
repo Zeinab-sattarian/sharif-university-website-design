@@ -23,7 +23,7 @@ This repository contains the source code for the Sharif University of Technology
 1. **Clone the Repository**:
 
    ```bash
-https://github.com/Zeinab-sattarian/sharif-university-website-design.git
+   https://github.com/Zeinab-sattarian/sharif-university-website-design.git
    ```
 
 2. **Create a Virtual Environment**:
